@@ -1,0 +1,237 @@
+/* 全体のベース設定 */
+body {
+    font-family:"Yu Gothic","Helvetica",sans-serif;
+    /* TODO: フォントを設定しよう */
+    background-color: #faf8f5;
+    /* TODO: 背景色を設定しよう */
+    color:#333;
+    /* TODO: 文字色を設定しよう */
+    line-height:1.6;
+    /* TODO: 行の高さを設定しよう */
+    margin:0;
+    /* TODO: 外側余白をリセットしよう */
+    padding:0;
+    /* TODO: 内側余白もリセットしよう */
+  }
+  
+  /* 各要素に余白をつけて整えましょう */
+  main, section,footer, aside,nav{
+    padding: 20px;
+    /* TODO: セクションの内側余白を設定 */
+
+  }
+  
+  /* ヘッダー */
+  header {
+    background-color:#2f6431;
+    /* TODO: 背景色を設定しよう */
+    color:white;
+    /* TODO: 文字色を設定しよう */
+    text-align:center;
+    /* TODO: テキストを中央揃えにしよう */
+    padding: 10px 20px;
+    margin-bottom: 0;
+    /* TODO: 上下の余白を設定 */
+    
+  }
+  
+  /* ナビゲーション全体 */
+  nav {
+    background-color:#2f6431;
+    padding: 10px 20px;
+    
+    text-align:center;
+  }
+  
+  nav ul {
+    list-style: none;
+    /* TODO: リストの記号を消そう */
+    padding: 0;
+    /* TODO: 内側余白をリセット */
+    display: flex;
+    justify-content: center; 
+  }
+  
+  nav li {
+    margin-right: 15px;
+    margin-top: 0;
+    /* TODO: リンクの間に右余白をつけよう */
+    
+  }
+  
+  nav a {
+    text-decoration: none;
+    /* TODO: 下線を消そう */
+    color:white;
+  }
+  
+  nav a:hover {
+    color:#275b28;
+    /* TODO: ホバー時の色変更 */
+    font-weight: bold;
+    /* TODO: 太字で強調 */
+    
+  }
+  
+  /* セクション見出し */
+
+  main,section,aside {text-align:center;
+  }
+  section h2 {
+    text-align:center;
+    border-bottom: 2px solid #5fdf64;
+    /* TODO: 下線（border）を追加 */
+    padding-bottom: 5px;
+    /* TODO: 下に余白を設定 */
+    margin: 30px auto 25px;
+    width: fit-content;
+    /* TODO: 上に余白を設定 */
+  }
+    
+    /* TODO: フォントサイズを大きく */
+  /* 画像 */
+  img {
+    max-width: 100%;
+    /* TODO: 幅を100%まで広げる */
+    height: auto;
+    /* TODO: 高さは自動にする */
+    /* TODO: 枠線をつけよう */
+    border-radius: 4px;
+    /* TODO: 角を丸める */
+    display: block;
+    margin: 0 auto;
+    /* TODO: 上下に余白を追加 */
+  }
+  .sample-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
+  .sample-row > div {
+    width: 30%;
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: #fff
+  }
+.sample-row p {
+  margin-bottom: 0;
+}
+
+  .sample-row img {
+    width: 100%;
+    height: 200;
+    object-fit: cover;
+  }
+  /* 表 */
+
+
+  table {
+    width: 100%;
+    /* TODO: 表を横幅いっぱいに広げる */
+    border-collapse: collapse;
+    /* TODO: 境界線を1本化する */
+    margin-top: 15px;
+    /* TODO: 上に余白を */
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    /* TODO: 枠線をつけよう */
+    padding: 10px;
+    /* TODO: セル内余白を設定 */
+    text-align: left;
+    /* TODO: 文字を左揃えに */
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    /* TODO: 背景色で見出しを目立たせる */
+  }
+  
+  /* フォーム全体 */
+  form {
+    margin-top: 20px;
+      /* TODO: 上に余白を追加 */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea,
+  select {
+    width: 60%;
+    max-width:  500px;
+    box-sizing: border-box;
+    display: block;
+    /* TODO: 幅を100%にする */
+    padding: 10px;
+    /* TODO: 内側余白を追加 */
+    margin: 0 auto 15px;
+    /* TODO: 下に余白を設定 */
+    border: 1px solid #ccc;
+    /* TODO: 枠線を設定 */
+    border-radius: 4px;
+    /* TODO: 角丸にする */
+  }
+
+  form label {
+    display: block;
+    width: 60%;
+    max-width: 500px;
+    margin: 0 auto 5px;
+    text-align: left;
+  }
+  
+  button {
+    background-color:#2f6431;
+    /* TODO: 背景色を設定 */
+    color: white;
+    /* TODO: 文字色を白に */
+    border: none;
+    /* TODO: 枠線なしにする */
+    padding: 10px 20px;
+    /* TODO: クリックしやすく余白を追加 */
+    border-radius: 4px;
+    /* TODO: 角を丸める */
+    cursor: pointer;
+    /* TODO: カーソルを指マークに */
+    width: 60%;
+    max-width: 500px;
+    box-sizing: border-box;
+  }
+  
+  button:hover {
+    background-color: #276b28;
+    /* TODO: 背景色を少し濃く変化 */
+  }
+  
+  /* aside（補足情報） */
+  aside {
+    background-color: #f1f1f1;
+    /* TODO: 背景色を設定 */
+    border-left: 5px solid #2f6431;
+    /* TODO: 左にカラーの線をつける */
+    margin: 30px 20px;
+    /* TODO: 外側余白 */
+    padding:15px;
+    /* TODO: 内側余白 */
+  }
+  
+  /* フッター */
+  footer {
+    background-color: #2f6431;
+    /* TODO: 背景色を設定 */
+    color: white;
+    /* TODO: 文字色を設定 */
+    text-align: center;
+    /* TODO: テキスト中央揃え */
+    padding: 15px;
+    /* TODO: 内側余白 */
+    margin-top: 40px;
+    /* TODO: 上に外側余白 */
+  }
+
+#section1 img {
+  border: none;
+}

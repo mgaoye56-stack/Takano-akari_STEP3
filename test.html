@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <!-- 文字コードをUTF-8に設定 -->
+  <meta charset="UTF-8">
+  <!-- モバイルでも見やすくする設定 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAG CAFE</title>
+  <!-- CSSファイルの読み込み -->
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <!-- サイト全体のヘッダー -->
+  <header>
+    <h1>TAG CAFE</h1>
+    <p>心安らぐ一杯をあなたに</p>
+  </header>
+
+  <!-- ナビゲーション -->
+  <nav>
+    <ul>
+      <li><a href="#section1">About Us</a></li>
+      <li><a href="#section2">Menu</a></li>
+      <li><a href="#section3">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- メインコンテンツ -->
+  <main>
+
+    <!-- セクション1：画像・改行・強調 -->
+    <section id="section1">
+    <h2>About Us</h2>
+
+      <p>TNGCafeは自然の香りに包まれたリラックス空間を提供しています。
+      <br>自家焙煎コーヒーと手作りスイーツで、穏やかな時間をお過ごし下さい。
+      </p>
+      <!-- 画像がない場合は代替テキストが表示されます -->
+      <img src="sample.jpg" alt="カフェの写真" width="300">
+    </section>
+
+      <section id="section2">
+        <h2>Menu</h2>
+      <div class="sample-row">
+      <div>
+        <img src="sample-1.jpg" alt="コーヒー" width="300">
+        <p>ブレンドコーヒー</p>
+        </div>
+        <div>
+        <img src="sample-2.jpg" alt="ケーキ" width="300">
+        <p>ベイクドチーズケーキ</p>
+        </div>
+    <div>
+      <img src="sample-3.jpg" alt="ラテ" width="300">
+      <p>カフェラテ</p>
+    </div>
+      </div>
+  </section>
+
+
+    <!-- セクション3：フォームの例 -->
+    <section id="section3">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+
+        <!-- テキスト入力 -->
+        <label for="name">お名前：</label>
+        <input type="text" id="name" name="name">
+
+        <!-- メール入力 -->
+        <label for="email">メールアドレス：</label>
+        <input type="email" id="email" name="email">
+
+        <!-- テキストエリア -->
+        <label for="message">お問い合わせ：</label>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+
+        <!-- 送信ボタン -->
+        <button type="submit">送信</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- 補足情報（aside） -->
+
+  <!-- サイト全体のフッター -->
+  <footer>
+    <p>&copy; 20○○ TNG Cafe</p>
+  </footer>
+
+</body>
+</html>
