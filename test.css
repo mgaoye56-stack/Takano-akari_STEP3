@@ -66,7 +66,7 @@ body {
   }
   
   nav a:hover {
-    color:#275b28;
+    color:#0a1d0a;
     /* TODO: ホバー時の色変更 */
     font-weight: bold;
     /* TODO: 太字で強調 */
@@ -113,15 +113,22 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-sizing: border-box;
-    background-color: #fff
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+
+  .sample-row > div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+
 .sample-row p {
   margin-bottom: 0;
 }
 
   .sample-row img {
     width: 100%;
-    height: 200;
+    height: 200px;
     object-fit: cover;
   }
   /* 表 */
@@ -202,7 +209,7 @@ body {
   }
   
   button:hover {
-    background-color: #276b28;
+    background-color: #143a14;
     /* TODO: 背景色を少し濃く変化 */
   }
   
